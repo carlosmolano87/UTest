@@ -11,6 +11,7 @@ repositories {
 
 dependencies {
     testImplementation 'junit:junit:4.12'
+    testRuntimeOnly("org.junit.vintage:junit-vintage-engine:5.8.2")
     implementation 'net.serenity-bdd:serenity-core:2.0.82'
     implementation 'net.serenity-bdd:serenity-cucumber:1.9.45'
     implementation 'net.serenity-bdd:serenity-screenplay:2.0.82'
