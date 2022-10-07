@@ -1,5 +1,6 @@
 package co.com.bancolombia.certification.utest.stepdefinitions;
 
+import co.com.bancolombia.certification.utest.tasks.RegisterUser;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -29,7 +30,7 @@ public class RegisterUserStepDefinitions {
 
     @When("^user create an account filling all fields$")
     public void userCreateAnAccountFillingAllFields() {
-        // Write code here that turns the phrase above into concrete actions
+        theActorInTheSpotlight().attemptsTo(RegisterUser.makeinformation());
     }
 
     @Then("^user sees its username$")
